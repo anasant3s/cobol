@@ -1,0 +1,16 @@
+       IDENTIFICATION DIVISION.
+       PROGRAM-ID. VAR.
+       DATA DIVISION.
+       WORKING-STORAGE SECTION.
+           01 NOME PIC X(50) VALUE "ANA".
+           01 IDADE PIC 9(3) VALUE 18.
+      * EM IDADE VAI PREENCHER ATE COM 3 ELEMENTOS
+           01 SALARIO PIC 9(6)V9(2) VALUE 20000.00.
+      * TAMANHO DA VAR
+       PROCEDURE DIVISION.
+           DISPLAY "NOME: " NOME.
+           DISPLAY "IDADE: " IDADE.
+           DISPLAY "SALÁRIO: " SALARIO.
+           STOP RUN.
+      *executar terminal> cobc -x VAR.COB (NECESSARIO TER COBOL INSTAL)
+       
